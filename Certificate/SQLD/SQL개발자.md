@@ -13,4 +13,4 @@
   
 ###
 ###### SQL 활용과 최적화 기본원리 과목은 이론 정리보다 다양하고 많은 문제를 푸는 것이 더욱 도움됨
-###### 시험 직전 기출문제 오답 확인을 하며 틀린 부분에 대한 개념을 다시 정리함 [오답 개념 정리](https://github.com/datajudy20/TIL/blob/main/Certificate/SQLD/%EC%98%A4%EB%8B%B5%20%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC.pdf)
+###### 시험 직전 기출문제 오답 확인을 하며 틀린 부분에 대한 개념을 다시 정리함 => [오답 개념 정리](https://github.com/datajudy20/TIL/blob/main/Certificate/SQLD/%EC%98%A4%EB%8B%B5%20%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC.pdf)
