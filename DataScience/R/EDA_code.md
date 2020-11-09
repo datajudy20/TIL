@@ -1,5 +1,6 @@
-# 탐색적자료분석 R 코드 (
+# 탐색적자료분석 R 코드 (Exploratory Data Analysis)
 ###### 동국대학교 통계학과 `탐색적 자료 분석' 전공 강의에서 공부하며 정리한 내용 정리
+###### ***기본적인 R코드 문법 정리 => [Rcode_basic](https://github.com/datajudy20/TIL/blob/main/DataScience/R/Rcode_basic.pdf)***
 ---
 ## 기초 코드
 - 모든 함수 정보 확인 : **help.start**
