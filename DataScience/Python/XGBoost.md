@@ -4,7 +4,7 @@
 - 여러 개의 Decision Tree를 조합해서 사용하는 앙상블 알고리즘.
 - Regression 과 Classification 문제 모두 지원함<BR/><BR/>
 
-> **특징**
+:small_orange_diamond: **특징**
 - gbm 보다 빠름
 - 과적합 방지가 가능한 규제가 포함되어 있음
 - CART (Classification And Regression Tree)를 기반으로 함
@@ -13,7 +13,7 @@
 - 조기 종료를 제공함. 오류가 더 이상 개선되지 않으면 수행을 중지함.<BR/> n_estimators를 200으로 설정하고 조기 중단 파라미터 값을 50으로 설정하면, 1부터 200회까지 부스팅을 반복하다가 50회를 반복하는 동안 학습 오류가 감소하지 않으면 더 이상 부스팅을 진행하지 않고 종료함.
 <BR/>(100회에서 학습 오류 값이 0.8인데 101~150회 반복하는 동안 예측 오류가 0.8보다 작은 값이 하나도 없으면 부스팅 종료)<BR/><BR/>
 
-> **파라미터**
+:small_orange_diamond: **파라미터**
 - **booster** : 어떤 부스터 구조를 쓸지 결정하는 파라미터. (gbtree / gblinear / dart)
 - nthread : 몇 개의 thread를 동시에 처리할지 결정하는 파라미터. 병렬처리에 사용되는 코어수.
 - num_feature : feature 차원의 숫자를 결정하는 파라미터.
@@ -37,10 +37,10 @@ multi:softprob - 다항 분류 문제. 각 클래스 범주에 속하는 예측 
 
               
 
-##### => 모델의 하이퍼 파라미터는 대부분 값이 정해진 규칙이 없어서 주로 랜덤서치, 그리드서치, 또는 베이지안 최적화를 이용한 방법으로 최적값을 찾음.<BR/><BR/><BR/>
+##### :bulb: 모델의 하이퍼 파라미터는 대부분 값이 정해진 규칙이 없어서 주로 랜덤서치, 그리드서치, 또는 베이지안 최적화를 이용한 방법으로 최적값을 찾음.<BR/><BR/><BR/>
 
 
-> **파이썬 코드 - 파라미터 최적값 찾기 (베이즈 최적화 방법)**
+:small_blue_diamond: **파이썬 코드 - 파라미터 최적값 찾기 (베이즈 최적화 방법)**
 ```python
 import xgboost as xgb
 xgb_clf = xgb.XGBClassifier()
@@ -75,7 +75,7 @@ xgboostBO.maximize(init_points=10, n_iter = 30)
 xgboostBO.max                                       ## 찾은 파라미터 값 확인
 ```
 
-> **파이썬 코드 - 모델 학습 및 평가**
+:small_blue_diamond: **파이썬 코드 - 모델 학습 및 평가**
 
 ```python
 xgb_model = xgb.XGBClassifier(max_depth= int(xgboostBO.max['params']['max_depth']),
@@ -95,7 +95,7 @@ xgb_model.score(X_train, y_train)   ## train data accuracy
 xgb_model.score(X_test, y_test)     ## test data accuracy
 ```
 
-> **파이썬 코드 - 변수 중요도 시각화**
+:small_blue_diamond: **파이썬 코드 - 변수 중요도 시각화**
 
 ```python
 from xgboost import plot_importance
